@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.6rem;
+  background-color: white;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+.container__box {
+  padding: 3.5em 2.5em 0;
+  text-align: center;
+}
+.container__box .main__box h1 {
+  font-size: 3.5rem;
+  color: hsla(300deg, 1%, 23%, 0.841);
+}
+.container__box .main__box p {
+  padding-top: 1em;
+  color: hsl(180deg, 4%, 34%);
+  line-height: 1.5em;
+}
+.container__box .cream__box {
+  margin-top: 2em;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.container__box .cream__box .img-one {
+  width: 100%;
+}
+.container__box .cream__box .img-two {
+  display: none;
+}
+.container .opinions__box {
+  padding: 2em 2em 1em;
+}
+.container .opinions__box .opinion__box {
+  margin: 1em 0;
+  background-color: hsl(300deg, 1%, 41%);
+  border-radius: 14px;
+  color: hsl(0deg, 0%, 100%);
+}
+.container .opinions__box .opinion__box .person {
+  padding: 2em 1.7em 1em;
+  display: flex;
+}
+.container .opinions__box .opinion__box .person-img {
+  margin-right: 1.5em;
+}
+.container .opinions__box .opinion__box .person-img img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .opinions__box .opinion__box .person-name h6 {
+  font-size: 1.7rem;
+}
+.container .opinions__box .opinion__box .person-name p {
+  margin-top: 0.3em;
+  color: hsl(180deg, 35%, 90%);
+}
+.container .opinions__box .opinion__box .person-opinion {
+  padding: 1em 1.7em 1.5em;
+}
+
+@media (min-width: 576px) {
+  .container__box .main__box h1 {
+    font-size: 4rem;
+  }
+  .container__box .cream__box {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 4em auto;
+  }
+  .container__box .cream__box .img-one {
+    width: 65%;
+  }
+  .container__box .cream__box .img-two {
+    display: block;
+    width: 35%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    display: flex;
+  }
+  .container__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container__box .main__box h1 {
+    font-size: 4.5rem;
+  }
+  .container__box .cream__box {
+    width: 100%;
+  }
+  .container .opinions__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
